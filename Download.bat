@@ -10,8 +10,8 @@ echo.
 :: Prompt for URL
 set /p url=Enter YouTube video URL:
 
-:: Download best video+audio with fallback
-YTDownloder.exe -f "bv*+ba/best" -o "%%(title)s.%%(ext)s" "%url%"
+:: Download best video+audio and merge with FFmpeg
+YTDownloader.exe -f "bv*+ba/best" --merge-output-format mp4 -o "%%(title)s.%%(ext)s" "%url%"
 
 :: Completion message
 echo.
