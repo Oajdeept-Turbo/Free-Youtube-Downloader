@@ -1,21 +1,27 @@
-# Colorful banner using Write-Host colors
-Write-Host "=============================================================" -ForegroundColor Magenta
-Write-Host "This APP is Not an Offensive ACT Against YouTube Policy" -ForegroundColor Yellow
-Write-Host "and is just a Preview Test" -ForegroundColor Cyan
-Write-Host "=============================================================" -ForegroundColor Magenta
+# Banner
+Write-Host "========================================"
+Write-Host "This APP is Not an Offensive ACT Against YouTube Policy"
+Write-Host "and is just a Preview Test"
+Write-Host "========================================"
 Write-Host ""
 
-# Prompt for URL
-Write-Host "Enter YouTube video URL: " -ForegroundColor Yellow -NoNewline
-$url = Read-Host
+# Ask for URL
+$ytURL = Read-Host "Enter YouTube video URL"
 
-# Run yt-dlp with best video+audio and merge using FFmpeg
-.\YTDownloder.exe `
-    -f "bv*+ba/best" `
-    --merge-output-format mp4 `
-    -o "%(title)s.%(ext)s" `
-    "$url"
+# Find the EXE
+$ytExe = Get-ChildItem -Path "." -Filter "YTdow*.exe" | Select-Object -First 1
 
-# Completion message
+# Handle missing EXE
+if (-not $ytExe) {
+    Write-Host "❌ No YTdow*.exe found in this folder."
+    pause
+    exit
+}
+
+# Run the EXE with high-res merged download
+Write-Host "✅ Found: $($ytExe.Name)"
+Write-Host "🔄 Downloading in highest available resolution..."
+Start-Process -FilePath $ytExe.FullName -ArgumentList "-f `"bv*+ba/best`" --merge-output-format mp4 `"$ytURL`""
 Write-Host ""
-Write-Host "Download complete or in progress..." -ForegroundColor Cyan
+Write-Host "✅ Download complete or in progress..."
+pause

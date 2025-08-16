@@ -1,19 +1,35 @@
 @echo off
-:: Colorful banner using Windows 10+ color support
-echo.
-echo ============================================================
+setlocal enabledelayedexpansion
+
+:: Banner
+echo ========================================
 echo This APP is Not an Offensive ACT Against YouTube Policy
 echo and is just a Preview Test
-echo ============================================================
+echo ========================================
 echo.
 
-:: Prompt for URL
-set /p url=Enter YouTube video URL:
+:: Ask for URL
+set /p "ytURL=Enter YouTube video URL: "
 
-:: Download best video+audio and merge with FFmpeg
-YTDownloader.exe -f "bv*+ba/best" --merge-output-format mp4 -o "%%(title)s.%%(ext)s" "%url%"
+:: Find the EXE
+set "ytExe="
+for %%F in (YTdow*.exe) do (
+    if not defined ytExe (
+        set "ytExe=%%F"
+    )
+)
 
-:: Completion message
+:: Handle missing EXE
+if not defined ytExe (
+    echo ❌ No YTdow*.exe found in this folder.
+    pause
+    exit /b
+)
+
+:: Run the EXE with high-res merged download
+echo ✅ Found: !ytExe!
+echo 🔄 Downloading in highest available resolution...
+start "" "!ytExe!" -f "bv*+ba/best" --merge-output-format mp4 "!ytURL!"
 echo.
-echo Download complete or in progress...
+echo ✅ Download complete or in progress...
 pause
