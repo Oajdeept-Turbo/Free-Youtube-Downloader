@@ -9,9 +9,10 @@ Write-Host ""
 Write-Host "Enter YouTube video URL: " -ForegroundColor Yellow -NoNewline
 $url = Read-Host
 
-# Run yt-dlp with best video+audio and clean filename
+# Run yt-dlp with best video+audio and merge using FFmpeg
 .\YTDownloder.exe `
     -f "bv*+ba/best" `
+    --merge-output-format mp4 `
     -o "%(title)s.%(ext)s" `
     "$url"
 
