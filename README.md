@@ -48,5 +48,6 @@ This project is part of a larger experiment in theatrical scripting. Expect upda
 
 
 
-https://github.com/user-attachments/assets/e17d02f2-eff1-46a5-9fc9-74069f19dcaa
+
+
 
