@@ -9,10 +9,10 @@ A fully automated, horror-themed YouTube downloader forged from native Windows t
 ## 🎥 How to Use the Haunted Downloader
 
 ### 🩸 Option 1: Ritual via Batch Summoning  
-[▶️ Watch How_to_use_option_1.mp4](./How_to_use_option_1.mp4)
+[▶️ Watch How_to_use_option_1.mp4](./How_to_use_option1.mp4)
 
 ### 🧿 Option 2: Ritual via EXE Invocation  
-[▶️ Watch How_to_use_option_2.mp4](./How_to_use_option_2.mp4)
+[▶️ Watch How_to_use_option_2.mp4](./How_to_use_option2.mp4)
 
 
 
@@ -55,6 +55,7 @@ The icon is deliberately unsettling—designed to evoke dread, confusion, and ad
 🕯️ **Note**
 
 This project is part of a larger experiment in theatrical scripting. Expect updates with unsafe glyphs, glitch effects, and fantasy GUI stages. Subscribe to the chaos.
+
 
 
 
