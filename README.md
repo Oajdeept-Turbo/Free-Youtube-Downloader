@@ -1,3 +1,35 @@
+# ☠ Ritual Harvester 2026 ☠
+
+A dark neon YouTube downloader for offline summoning.  
+Built for students, creators, and archivists who want cinematic control over their downloads.
+
+## 🔥 Features
+- Dark neon GUI with glowing console
+- Local ffmpeg integration (no install required)
+- Live terminal output + progress bar
+- Watermark: `© Oajdeept || SingedBeet`
+- Portable EXE build with no dependencies
+
+## 🛠 How to Use
+1. Paste a YouTube video link.
+2. Click **Summon Vessel**.
+3. Watch the ritual unfold in the console.
+4. Downloaded file appears in the `downloads/` folder.
+
+## 📦 Included
+- `ritual_gui.py` — Python source
+- `YTDownloader.exe` — yt-dlp binary
+- `ffmpeg.exe` — local ffmpeg
+- `your_icon.ico` — branded skull icon
+
+## 🧙 Credits
+Created by **Oajdeept || SingedBeet**  
+Inspired by mythic builds, cinematic rituals, and offline empowerment.
+
+## 📜 License
+MIT — free to use, modify, and share.
+
+
 🧨 **YouTube Downloader EXE** (PowerShell + Cursed Icon)
 
 A fully automated, horror-themed YouTube downloader forged from native Windows tools—no third-party installers, no mercy. This project showcases how far PowerShell and batch scripting can be pushed to summon a standalone `.exe` with a cursed icon and embedded ritualistic automation.
@@ -55,6 +87,7 @@ The icon is deliberately unsettling—designed to evoke dread, confusion, and ad
 🕯️ **Note**
 
 This project is part of a larger experiment in theatrical scripting. Expect updates with unsafe glyphs, glitch effects, and fantasy GUI stages. Subscribe to the chaos.
+
 
 
 
