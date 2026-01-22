@@ -1,5 +1,11 @@
 # ☠ Ritual Harvester 2026 ☠
 
+
+
+
+https://github.com/user-attachments/assets/a5653b89-3e25-4ef6-8124-887a9ff0516a
+
+
 A dark neon YouTube downloader for offline summoning.  
 Built for students, creators, and archivists who want cinematic control over their downloads.
 
@@ -87,6 +93,7 @@ The icon is deliberately unsettling—designed to evoke dread, confusion, and ad
 🕯️ **Note**
 
 This project is part of a larger experiment in theatrical scripting. Expect updates with unsafe glyphs, glitch effects, and fantasy GUI stages. Subscribe to the chaos.
+
 
 
 
